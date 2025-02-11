@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { environment } from '../environments/environment'; // Import environment
 
 @Component({
   selector: 'app-root',
@@ -11,4 +12,5 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 })
 export class AppComponent {
   title = 'movieApiUi';
+  apiUrl = environment.apiUrl; // Use API URL from environment
 }
